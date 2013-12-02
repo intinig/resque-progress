@@ -1,7 +1,9 @@
+require 'rubygems'
 require 'digest/sha1'
 require 'resque'
 require 'resque/plugins/progress'
 require 'resque/plugins/progress/version'
+require 'test/unit'
 
 class ProgressJob
   extend Resque::Plugins::Progress
