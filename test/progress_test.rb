@@ -1,4 +1,6 @@
 require 'rubygems'
+require 'bundler/setup'
+
 require 'digest/sha1'
 require 'resque'
 require 'resque/plugins/progress'
@@ -60,7 +62,7 @@ class ProgressTest < Test::Unit::TestCase
 
   def test_meta_version
     major, minor, patch = Resque::Plugins::Meta::Version.split('.')
-    assert_equal 1, major.to_i
+    assert_equal 2, major.to_i
   end
 
   def test_lint

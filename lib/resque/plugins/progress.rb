@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require 'resque/plugins/meta'
 
 module Resque
